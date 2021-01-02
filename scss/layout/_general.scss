@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.active {
+	background-color: rgba(231, 204, 48, 0.295);
+}
+
+.icon {
+	@include size(10px);
+	margin: 0 15px;
+	fill: #fff;
+
+	&.add {
+		@include size(45px);
+		cursor: pointer;
+	}
+
+	&.close {
+		@include size(15px);
+		z-index: 99999999999999;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		fill: rgba(231, 204, 48, 0.295);
+	}
+
+}
+
+.btns {
+	display: none;
+	opacity: 0;
+}

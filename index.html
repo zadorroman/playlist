@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<section class="playlist">
+		<div class="container">
+			<div class="playlist__wrap">
+				<div class="playlist__head">
+					<div class="modal">
+						<svg class="icon close">
+							<use xlink:href="images/sprite.svg#delete"></use>
+						</svg>
+						<form action="#" name="updateForm">
+							<div class="field">
+								<label for="title">Title</label>
+								<input type="text" id="title">
+							</div>
+							<div class="field">
+								<label for="author">Author</label>
+								<input type="text" id="author">
+							</div>
+							<button type="button" class="save">Save</button>
+						</form>
+					</div>
+					<div class="playlist__img">
+						<img src="images/shapka.gif" alt="image" class="playlist__pic">
+					</div>
+					<div class="playlist__box">
+						<div class="playlist__author playlist__author--head">
+							Select song
+						</div>
+						<div class="playlist__song playlist__song--head">
+							to play double-click, stop one-click
+						</div>
+					</div>
+					<svg class="icon add">
+						<use xlink:href="images/sprite.svg#add-button"></use>
+					</svg>
+				</div>
+				<div class="playlist__main">
+					<div class="btns">
+						<svg class="icon edit">
+							<use xlink:href="images/sprite.svg#edit"></use>
+						</svg>
+						<svg class="icon delete">
+							<use xlink:href="images/sprite.svg#delete"></use>
+						</svg>
+					</div>
+					<ul class="playlist__list">
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
