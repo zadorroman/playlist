@@ -140,10 +140,10 @@ function renderItem(title, author, id) {
 		songEl.innerHTML = song.song;
 		if (song.author != 'AC/DC') {
 			img.src = `images/${url}.jpg`;
-			back.style.backgroundImage = `url('../images/${url}.jpg')`;
+			back.style.backgroundImage = `url('images/${url}.jpg')`;
 		} else {
 			img.src = 'images/acdc.jpg';
-			back.style.backgroundImage = "url('../images/acdc.jpg')";
+			back.style.backgroundImage = "url('images/acdc.jpg')";
 		}
 
 		playSong(song, spanT, this);
