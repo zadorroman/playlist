@@ -131,18 +131,19 @@ function renderItem(title, author, id) {
 		let title = document.querySelector('.playlist__author--head'),
 			songEl = document.querySelector('.playlist__song--head'),
 			img = document.querySelector('.playlist__pic'),
-			back = document.querySelector('.playlist__wrap');
+			back = document.querySelector('.playlist__wrap'),
+			url = song.author.toLowerCase().split(' ').join('-');
 
 
 
 		title.innerHTML = song.author;
 		songEl.innerHTML = song.song;
 		if (song.author != 'AC/DC') {
-			img.src = `images/${song.author}.jpg`;
-			back.style.backgroundImage = `url('../images/${song.author}.jpg')`;
+			img.src = `images/${url}.jpg`;
+			back.style.backgroundImage = `url('../images/${url}.jpg')`;
 		} else {
-			img.src = 'images/ACDC.jpg';
-			back.style.backgroundImage = `url('../images/ACDC.jpg')`;
+			img.src = 'images/acdc.jpg';
+			back.style.backgroundImage = "url('../images/acdc.jpg')";
 		}
 
 		playSong(song, spanT, this);
