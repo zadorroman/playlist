@@ -282,11 +282,9 @@ function playSong(item, spanT) {
 // Stop Song
 function stopSong() {
 	CURRENT_AUDIO.pause()
+
 	audioInProgress = false;
-
-
 }
-
 
 	// (function ($) {
 	// 	$(document).ready(function () {

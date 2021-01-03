@@ -1,7 +1,7 @@
 .playlist {
     max-width: 450px;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
     user-select:none;
     overflow-y: hidden;
 
@@ -114,7 +114,7 @@
         background-size: cover;
         color: #fff;
         position: relative;
-        margin: 10vh auto;
+        margin: 10vh auto 0;
         border-radius: 15px;
         transition: all .3s;
         box-shadow: 0 0 15px rgba(0,0,0,.5);
