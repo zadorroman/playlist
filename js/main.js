@@ -132,7 +132,8 @@ function renderItem(title, author, id) {
 			songEl = document.querySelector('.playlist__song--head'),
 			img = document.querySelector('.playlist__pic'),
 			back = document.querySelector('.playlist__wrap'),
-			url = song.author.toLowerCase().split(' ').join('-');
+			url = song.author.toLowerCase().split(' ').join('-'),
+			background = document.querySelector('body');
 
 
 
@@ -141,9 +142,11 @@ function renderItem(title, author, id) {
 		if (song.author != 'AC/DC') {
 			img.src = `images/${url}.jpg`;
 			back.style.backgroundImage = `url('images/${url}.jpg')`;
+			// background.style.backgroundImage = `url('images/${url}.jpg')`;
 		} else {
 			img.src = 'images/acdc.jpg';
 			back.style.backgroundImage = "url('images/acdc.jpg')";
+			// background.style.backgroundImage = "url('images/acdc.jpg')";
 		}
 
 		playSong(song, spanT, this);
